@@ -747,8 +747,9 @@
 
   <script>
     let dia = new Date().getDate();
-    let mes = new Date().getMonth();
+    let mes = new Date().getMonth()+1;
     let anyoActual = new Date().getFullYear();
+    console.log(dia, mes, anyoActual);
     if (mes == 1) {
       if (dia < 20) {
         document.getElementById("edad").innerHTML = anyoActual - 1998 - 1;
